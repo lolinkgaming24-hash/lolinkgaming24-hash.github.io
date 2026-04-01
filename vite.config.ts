@@ -43,7 +43,7 @@ export const sharedConfig: UserConfigFnPromise = async ({ mode }) =>
   }) satisfies UserConfig;
 
 // biome-ignore lint/style/noDefaultExport: required for Vite
-export default defineConfig(async config => {
+export default defineConfig(async config => {base: './'}
   const { mode, command } = config;
   const envPort = Number(loadEnv(mode, process.cwd()).VITE_PORT);
 
